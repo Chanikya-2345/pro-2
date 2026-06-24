@@ -7,16 +7,17 @@
     <title>Layali Lumina - Hand-Crafted Candles</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="nav-top-bar">
-          
-        <div class="nav-container">
+    <div class="nav-top-bar"></div>
+
+    <div class="nav-container">
             <div class="nav-logo">
                 <span class="logo-icon">🕯️</span>
                 <a href="#home">Layali Lumina</a>
-                <span class="logo-tagline">       PREMIUM ARTISAN CANDLES</span>
+                <span class="logo-tagline">PREMIUM ARTISAN CANDLES</span>
             </div>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -51,7 +52,7 @@
                 <span class="badge">🏆 Award-Winning Quality</span>
             </div>
           
-            <p class="hero-guarantee">✓ 30-Day Money-Back Guarantee | ✓ Free Shipping Over ₹999</p>
+            <p class="hero-guarantee">✓ 14-Day Money-Back Guarantee | ✓ Free Shipping Over ₹999</p>
           <div class="hero-buttons">
                 <button class="cta-button primary">Shop Premium Collection</button>
                            </div>
@@ -137,7 +138,7 @@ capturing the warmth, mystery and beauty of magical nights.
                 creating a romantic and timeless fragrance.
             </p>
             <div class="price">₹699</div>
-            <button class="buy-btn">Add to Cart</button>
+            <button class="buy-btn">✨ Add To Cart</button>
         </div>
 
         <div class="product-card">
@@ -148,7 +149,7 @@ capturing the warmth, mystery and beauty of magical nights.
                 create a comforting glow for cozy evenings.
             </p>
             <div class="price">₹599</div>
-            <button class="buy-btn">Add to Cart</button>
+            <button class="buy-btn">✨ Add To Cart</button>
         </div>
 
         <div class="product-card">
@@ -159,7 +160,7 @@ capturing the warmth, mystery and beauty of magical nights.
                 fragrance inspired by moonlit Arabian evenings.
             </p>
             <div class="price">₹899</div>
-            <button class="buy-btn">Add to Cart</button>
+            <button class="buy-btn">✨ Add To Cart</button>
         </div>
 
     </div>
@@ -377,6 +378,45 @@ capturing the warmth, mystery and beauty of magical nights.
 class="whatsapp-float"
 target="_blank">
 💬
+</a>
+<!-- Order Popup -->
+
+<div id="orderModal" class="order-modal">
+
+    <div class="order-box">
+
+        <span class="close-order">&times;</span>
+
+        <h2>✨ Place Your Order</h2>
+
+        <input type="text" id="customerName"
+        placeholder="Your Name">
+
+        <input type="tel" id="customerPhone"
+        placeholder="Phone Number">
+
+        <textarea id="customerAddress"
+        placeholder="Delivery Address"></textarea>
+
+        <input type="number"
+        id="orderQty"
+        value="1"
+        min="1">
+
+        <button id="sendOrderBtn">
+            Order on WhatsApp
+        </button>
+
+    </div>
+
+</div>
+<a
+href="https://wa.me/919490466386"
+class="whatsapp-float"
+target="_blank">
+
+💬
+
 </a>
 </body>
 </html>
