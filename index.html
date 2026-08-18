@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Layali Lumina - Luxury handcrafted candles made for magical nights."
+    />
+
+    <title>Layali Lumina | Made For Magical Nights</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- =========================
+     LUXURY NAVIGATION
+========================= -->
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-icon"> 🕯️ </span>
+
+          <div class="logo-text">
+            <a href="#home"> Layali Lumina </a>
+
+            <span> MADE FOR MAGICAL NIGHTS </span>
+          </div>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        
+
+        <div class="nav-icons">
+          <button class="nav-icon" id="searchBtn">🔍</button>
+
+          <a href="#" class="nav-icon" id="cartBtn">
+            🛒
+
+            <span id="cartCount"> 0 </span>
+          </a>
+        </div>
+        
+        <div class="search-box" id="searchBox">
+          <input type="text" id="searchInput" placeholder="Search candles..." />
+        </div>
+        
+      </div>
+      <ul class="nav-menu" id="navMenu">
+          <li>
+            <a href="#home" class="nav-link"> Home </a>
+          </li>
+
+          <li>
+            <a href="#about" class="nav-link"> Our Story </a>
+          </li>
+
+          <li>
+            <a href="#products" class="nav-link"> Collections </a>
+          </li>
+
+          <li>
+            <a href="#contact" class="nav-link"> Contact </a>
+          </li>
+        </ul>
+    </nav>
+
+    <!-- =========================
+     HERO SECTION
+========================= -->
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="hero-tag"> ✦ PREMIUM ARTISAN CANDLES ✦ </span>
+
+        <h1>
+          Illuminate Your
+          <br />
+
+          <span> Magical Nights </span>
+        </h1>
+
+        <p>
+          Hand-poured luxury candles crafted with premium fragrances, natural
+          soy wax, and timeless elegance.
+        </p>
+
+        <div class="hero-trust-badges">
+          <span> 🌿 100% Natural Wax </span>
+
+          <span> ✨ Premium Fragrance </span>
+
+          <span> ♻️ Eco Conscious </span>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#products" class="cta-button"> Explore Collection </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     ABOUT SECTION
+========================= -->
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-header">
+          <h2>The Art Of Magical Nights</h2>
+
+          <p class="section-subtitle">
+            Where luxury meets handcrafted tradition
+          </p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <h2>The Magic Behind Layali Lumina</h2>
+
+            <div class="quote-section">
+              <h3>
+                "We don't create candles.
+                <br />
+                We create moments."
+              </h3>
+            </div>
+
+            <p>
+              At Layali Lumina, every candle is created to transform ordinary
+              evenings into beautiful memories.
+            </p>
+
+            <p>
+              Each candle is hand-poured in small batches using premium soy wax
+              and carefully selected fragrance blends inspired by luxury
+              perfumes.
+            </p>
+
+            <p>
+              From romantic evenings to peaceful nights, our candles bring
+              warmth, elegance, and a magical atmosphere into your home.
+            </p>
+          </div>
+
+          <div class="about-features">
+            <div class="feature premium">
+              <span class="feature-icon"> 🌿 </span>
+
+              <h3>Natural Ingredients</h3>
+
+              <p>Premium soy wax sourced responsibly.</p>
+            </div>
+
+            <div class="feature premium">
+              <span class="feature-icon"> ✨ </span>
+
+              <h3>Luxury Fragrance</h3>
+
+              <p>Long-lasting scents designed for elegance.</p>
+            </div>
+
+            <div class="feature premium">
+              <span class="feature-icon"> 🖐️ </span>
+
+              <h3>Hand Crafted</h3>
+
+              <p>Every candle poured with care and precision.</p>
+            </div>
+
+            <div class="feature premium">
+              <span class="feature-icon"> ♻️ </span>
+
+              <h3>Eco Friendly</h3>
+
+              <p>Beautiful candles with sustainable choices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     PRODUCT COLLECTION
+========================= -->
+
+    <section class="products" id="products">
+      <div class="container">
+        <div class="products-header">
+          <h2>Signature Candle Collection</h2>
+
+          <div class="section-divider"></div>
+
+          <p class="section-subtitle">
+            Luxury fragrances created for unforgettable moments
+          </p>
+
+          <div class="catalog-controls" aria-label="Product filters">
+            <label class="catalog-search" for="catalogSearch">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              <input id="catalogSearch" type="search" placeholder="Search the collection" autocomplete="off" />
+            </label>
+            <div id="categoryFilters" class="category-filters" aria-label="Filter by category"></div>
+          </div>
+          <p id="productCount" class="product-count" aria-live="polite"></p>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+          <!-- Products Loaded Here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     CUSTOMER REVIEWS
+========================= -->
+
+    <section class="testimonials">
+      <div class="container">
+        <h2>Customer Love</h2>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+
+            <p>
+              "The fragrance feels premium and the candle quality is amazing. My
+              home feels completely different."
+            </p>
+
+            <h4>Vandana</h4>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+
+            <p>
+              "Beautiful packaging, amazing scent and the candle burns
+              perfectly."
+            </p>
+
+            <h4>Arjun</h4>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+
+            <p>"Perfect gift choice. Everyone loved the luxury feel."</p>
+
+            <h4>Priya</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+    <section class="why-choose-us">
+      <div class="container">
+        <h2>Why Choose Layali Lumina?</h2>
+
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <span class="benefit-icon"> ✓ </span>
+
+            <h3>Premium Wax</h3>
+
+            <p>Natural soy wax for a cleaner burn.</p>
+          </div>
+
+          <div class="benefit-item">
+            <span class="benefit-icon"> ✓ </span>
+
+            <h3>Long Lasting</h3>
+
+            <p>Designed for hours of beautiful fragrance.</p>
+          </div>
+
+          <div class="benefit-item">
+            <span class="benefit-icon"> ✓ </span>
+
+            <h3>Hand Crafted</h3>
+
+            <p>Every candle receives personal attention.</p>
+          </div>
+
+          <div class="benefit-item">
+            <span class="benefit-icon"> ✓ </span>
+
+            <h3>Luxury Design</h3>
+
+            <p>Elegant candles made to enhance interiors.</p>
+          </div>
+
+          <div class="benefit-item">
+            <span class="benefit-icon"> ✓ </span>
+
+            <h3>Eco Friendly</h3>
+
+            <p>Responsible materials and packaging.</p>
+          </div>
+
+          <div class="benefit-item">
+            <span class="benefit-icon"> ✓ </span>
+
+            <h3>Gift Ready</h3>
+
+            <p>Perfect for birthdays and celebrations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     INSTAGRAM SECTION
+========================= -->
+
+    <section class="instagram-section">
+      <div class="container">
+        <h2>Follow Our Journey</h2>
+
+        <p>@layalilumina</p>
+
+        <div class="social-links">
+          <a href="https://www.instagram.com/layali_lumina" class="social-icon">
+            📷
+          </a>
+
+          <div class="instagram-grid">
+            <img src="https://i.postimg.cc/Hx8PF3Ht/Midnight-Oud-2.jpg" />
+
+            <img src="https://i.postimg.cc/NMpHxxqG/Velvet-Rose.jpg" />
+
+            <img src="https://i.postimg.cc/4dJctSMm/Golden-Vanilla.jpg" />
+
+            <img src="https://i.postimg.cc/cHXnccy0/Arabian-Nights.jpg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     CONTACT SECTION
+========================= -->
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-header">
+          <h2>Connect With Us On</h2>
+
+          <p class="section-subtitle">
+            We are here to help you create magical moments
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="info-item">
+              <span class="info-icon"> 📧 </span>
+
+              <h3>Email ID</h3>
+
+              <p>hello@LayaliLumina.com</p>
+
+              <small> Reply within 2-3 hours in working timings </small>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon"> 📱 </span>
+
+              <h3>WhatsApp Number</h3>
+
+              <a
+                href="https://wa.me/918977438292"
+                class="whatsapp-link"
+                target="_blank"
+              >
+                <p>+91 8977438292</p>
+              </a>
+
+              <small> Mon - Sat | 9AM - 6PM </small>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon">
+                <i class="fab fa-instagram"></i>
+              </span>
+
+              <h3>Instagram ID</h3>
+              <p>
+                <a
+                  href="https://www.instagram.com/layali_lumina"
+                  class="social-link"
+                >
+                  <font color="Red">@layali_lumina</font>
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <h3>Send A Message</h3>
+
+            <input type="text" placeholder="Your Name" required />
+
+            <input type="email" placeholder="Email Address" required />
+
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+
+            <button class="submit-btn">Send Message</button>
+          </form>
+        </div>
+
+        <div class="newsletter-section">
+          <h3>Join The Lumina Circle</h3>
+
+          <p>Get exclusive offers, new collections and candle care tips.</p>
+
+          <form class="newsletter-form">
+            <input
+              type="email"
+              id="customerEmail"
+              placeholder="Email Address"
+              required
+            />
+
+            <button class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     FOOTER
+========================= -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Layali Lumina</h4>
+
+            <p>Luxury handcrafted candles made for magical nights.</p>
+
+            <div class="certifications">
+              <span> 100% Natural </span>
+
+              <span> Eco Friendly </span>
+
+              <span> Cruelty Free </span>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Shop</h4>
+
+            <ul>
+              <li>
+                <a href="#products"> Collections </a>
+              </li>
+
+              <li>
+                <a href="#"> Gift Sets </a>
+              </li>
+
+              <li>
+                <a href="#"> New Arrivals </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Information</h4>
+
+            <ul>
+              <li>
+                <a href="#about"> Our Story </a>
+              </li>
+
+              <li>
+                <a href="#"> Candle Care </a>
+              </li>
+
+              <li>
+                <a href="#"> Sustainability </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Follow Us</h4>
+
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/layali_lumina"
+                class="social-icon"
+              >
+                📷
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Layali Lumina. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========================
+     FLOATING WHATSAPP
+========================= -->
+
+    <a href="https://wa.me/918977438292" class="whatsapp-float" target="_blank">
+      💬
+    </a>
+
+    <!-- Cart Overlay -->
+
+    <div id="cartOverlay"></div>
+
+    <!-- =========================
+     CART SIDEBAR
+========================= -->
+
+    <div id="cartSidebar" class="cart-sidebar">
+      <div class="cart-header">
+        <h2>🛒 Your Cart</h2>
+
+        <button id="closeCart">✕</button>
+      </div>
+
+      <div id="cartItems"></div>
+
+      <div class="cart-footer">
+        <h3>Total: ₹<span id="cartTotal">0</span></h3>
+
+        <button id="continueShopping">← Continue Shopping</button>
+
+        <button id="checkoutBtn">Order on WhatsApp</button>
+
+        <button id="checkoutBtn2">Order on Instagram</button>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+
+    <!-- CHECKOUT POPUP -->
+
+    <div id="checkoutModal" class="checkout-modal">
+      <div class="checkout-box">
+        <span id="closeCheckout" class="close-checkout"> × </span>
+
+        <h2>🕯️ Checkout</h2>
+
+        <input
+          type="text"
+          id="customerName"
+          placeholder="Full Name"
+          required
+          maxlength="50"
+          pattern="[A-Za-z ]+"
+          title="Please enter only letters and spaces."
+          oninput="this.value = this.value.replace(/[^A-Za-z ]/g, '')"
+        />
+
+        <input
+          type="tel"
+          id="customerPhone"
+          placeholder="Mobile Number"
+          required
+          maxlength="10"
+          pattern="[0-9]{10}"
+          title="Please enter a valid 10-digit mobile number."
+          oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+        />
+
+        <textarea
+          id="customerAddress"
+          placeholder="Delivery Address"
+          required
+          minlength="10"
+          maxlength="250"
+        ></textarea>
+
+        <input
+          type="text"
+          id="customerCity"
+          placeholder="City"
+          required
+          pattern="[A-Za-z ]+"
+          oninput="this.value = this.value.replace(/[^A-Za-z ]/g, '')"
+        />
+
+        <input
+          type="text"
+          id="customerState"
+          placeholder="State"
+          required
+          pattern="[A-Za-z ]+"
+          oninput="this.value = this.value.replace(/[^A-Za-z ]/g, '')"
+        />
+
+        <input
+          type="text"
+          id="customerPincode"
+          placeholder="PIN Code"
+          required
+          maxlength="6"
+          pattern="[0-9]{6}"
+          oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+        />
+
+        <center>
+          <button id="placeOrderBtn">Place Order</button>
+        </center>
+      </div>
+    </div>
+  </body>
+</html>

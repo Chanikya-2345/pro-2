@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Layali Lumina Invoice</title>
+
+    <link rel="stylesheet" href="invoice.css" />
+  </head>
+
+  <body>
+    <div class="invoice-container">
+      <div class="header">
+        <img
+          src="https://i.postimg.cc/d1XhRNTm/Logo.png"
+          id="logo"
+          alt="Layali Lumina Logo"
+        />
+
+        <h1>LAYALI LUMINA</h1>
+
+        <p>Luxury Handcrafted Candles</p>
+      </div>
+
+      <div id="invoiceContent">Loading Invoice...</div>
+
+      <div class="buttons">
+        <button onclick="window.print()">🖨 Print Invoice</button>
+
+        <button onclick="window.close()">✖ Close</button>
+      </div>
+    </div>
+
+    <script type="module" src="invoice.js"></script>
+  </body>
+</html>

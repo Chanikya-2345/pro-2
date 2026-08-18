@@ -1,0 +1,219 @@
+body{
+
+    margin:0;
+
+    background:#f3f3f3;
+
+    font-family:Arial;
+
+}
+
+.invoice-container{
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:40px;
+
+    box-shadow:0 0 20px rgba(0,0,0,.15);
+
+}
+
+.header{
+
+    text-align:center;
+
+    border-bottom:3px solid #c89b3c;
+
+    padding-bottom:20px;
+
+}
+
+#logo{
+
+    width:120px;
+
+    height:auto;
+
+    display:block;
+
+    margin:0 auto 15px;
+
+}
+
+.header h1{
+
+    color:#b8860b;
+
+    margin:10px 0 5px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+th{
+
+    background:#b8860b;
+
+    color:white;
+
+}
+
+th,td{
+
+    border:1px solid #ddd;
+
+    padding:12px;
+
+}
+
+.total{
+
+    text-align:right;
+
+    margin-top:20px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+.buttons{
+
+    margin-top:40px;
+
+    text-align:center;
+
+}
+
+button{
+
+    padding:12px 25px;
+
+    margin:10px;
+
+    border:none;
+
+    background:#b8860b;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+@media (max-width: 700px){
+
+.invoice-container{
+
+    margin:16px auto;
+
+    padding:20px;
+
+}
+
+#logo{
+
+    width:90px;
+
+}
+
+th,td{
+
+    padding:8px;
+
+    font-size:13px;
+
+}
+
+.total{
+
+    font-size:18px;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.buttons button{
+
+    margin:0;
+
+    width:100%;
+
+}
+
+}
+
+@media (max-width: 420px){
+
+.invoice-container{
+
+    padding:14px;
+
+}
+
+.header h1{
+
+    font-size:20px;
+
+}
+
+table{
+
+    display:block;
+
+    overflow-x:auto;
+
+    white-space:nowrap;
+
+}
+
+}
+
+@media print{
+
+.buttons{
+
+display:none;
+
+}
+
+body{
+
+background:white;
+
+}
+
+.invoice-container{
+
+box-shadow:none;
+
+width:100%;
+
+margin:0;
+
+}
+
+}
